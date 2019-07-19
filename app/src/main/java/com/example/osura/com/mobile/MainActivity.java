@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnProfirl(View view) {
-//        Intent intent1 = new Intent(getApplicationContext(),);
-//        startActivity(intent1);
+        Intent intent1 = new Intent(getApplicationContext(),ProfileActivity.class);
+        startActivity(intent1);
     }
 }
