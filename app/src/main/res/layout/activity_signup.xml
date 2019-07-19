@@ -104,6 +104,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:onClick="showNext"
         android:background="#4CAF50"
         android:text="Next"
         android:textColor="#FFF"

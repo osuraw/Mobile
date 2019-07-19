@@ -1,5 +1,6 @@
 package com.example.osura.com.mobile;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 
 import static com.example.osura.com.mobile.R.*;
 import static com.example.osura.com.mobile.R.id.lblAreaList;
+import static com.example.osura.com.mobile.R.id.lblName;
 import static com.example.osura.com.mobile.R.id.lblQualList;
 import static com.example.osura.com.mobile.R.id.lblSubjectsList;
 import static com.example.osura.com.mobile.R.id.lblWorkList;
@@ -18,6 +20,11 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_profile);
+        Intent intent=getIntent();
+        TextView textView=findViewById(R.id.lblName);
+        textView.setText(intent.getStringExtra("name"));
+        textView=findViewById(id.lblNic);
+        textView.setText(intent.getStringExtra("nic"));
 
     }
 
@@ -58,6 +65,10 @@ public class ProfileActivity extends AppCompatActivity {
         txtWork.setText("");
 
     }
+    public void update(View view) {
+        
+    }
+
 }
 
 
